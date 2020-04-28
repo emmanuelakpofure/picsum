@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+       
+                <title>PicsumPicturesAssignment</title>
+
+              
+                
+                
+                  <style>
+                  .flex-container {
+                    display: flex;
+                    
+                    align-items: stretch;
+                   
+
+                  }
+                  
+                  .flex-container > div {
+                    color: black;
+                    margin: 100px;
+                    text-align: center;
+                    line-height: 20px;
+                    font-size: 15px;
+                  }
+
+                  pre {
+                  font-size: 14px;
+                  background-color: hsl(210, 14.3%, 93.3%);
+                  border-radius: 4px;
+                  padding: 1em;
+                  margin-top: 1em;
+                  margin-bottom: 2em;
+                  width: 100%;
+                  }
+
+                  pr {
+                  font-size: 14px;
+                  background-color: hsl(210, 14.3%, 93.3%);
+                  border-radius: 4px;
+                  padding: 1em;
+                  margin-top: 1em;
+                  margin-bottom: 2em;
+                  width: 100%;
+                  }
+
+                  precode {
+                 font-size: 14px;
+                 background: white;
+                 border-radius: 4px;
+                  padding: 1em;
+                  margin-top: 1em;
+                  margin-bottom: 2em;
+                  width: 300%;
+                  }
+              
+                  pre.code-box {
+                  box-shadow: 0 0 0 1px hsla(240, 30.1%, 28%, 0.05), 0 2px 5px 0 hsla(240, 30.1%, 28%, 0.1), 0 1px 1px 0 hsla(0, 0%, 0%, 0.07);
+                  background: white;
+                  padding: 18px;
+                  }
+
+                  </style>
+
+  </head>
+    <body>
+
+    <div class="flex-container">
+        <div style="flex-grow: 3"><h1><img src="images/imglogo.svg" width="15%" alt="My Image">Lorem Picsum</h1><h3>The Lorem Ipsum for photos.</h3>
+         <img src="images/img1.jpg" width="62%" alt="My Image"></div>
+        <div style="flex-grow: 8"> <img src="images/img2.jpg" width="100%" alt="My Image"></div>
+    </div>
+        <div id="row2col12" style="text-align: center; background-color:  hsl(0, 0%, 94.9%); height: 400px; padding-top: 80px;">
+          
+        <h1>Easy to use, stylish placeholders</h1>
+        <h3>Just add your desired image size (width & height) after our URL, and you'll get a</h3>
+        <h3>random image.</h3>
+        <precode>https://picsum.photos/200/300</precode>
+        <h3>To get a square image, just add the size.</h3>
+         <precode>https://picsum.photos/200</precode>
+        </div>
+  
+<div class="flex-container">
+  <div style="flex-grow: 3" <div id="row3col1" style="line-height: 0.2em;">
+    
+      <h2>Specific Image</h2>
+      <h5>Get a specific image by adding /id/{image} to the start of the url.</h5>
+      <pre>https://picsum.photos/id/237/200/300</pre>
+      <h5>You can find a list of all the images here.</h5>
+      
+    </div>
+  <div style="flex-grow: 8"> <img src="images/img3.jpg" width="100%" alt="My Image"></div>
+</div>                
+                
+    
+<div class="flex-container">
+  <div style="flex-grow: 8"> <img src="images/img4.jpg" width="100%" alt="My Image"></div>
+      <div style="flex-grow: 8" <div id="row4col2" style="line-height: 0.2em;">
+        <h2>Static Random Image</h2>
+        <h5>Get the same random image every time based on a seed,by adding</h5>
+        <h5>/seed/{seed} to the start of the url.</h5>
+        <pre>https://picsum.photos/seed/picsum/200/300</pre>
+  </div>
+</div>                
+                
+<div class="flex-container">
+  <div style="flex-grow: 8" <div id="row5col1" style="line-height: 0.2em;">
+    
+    <h2>Grayscale</h2>
+    <h3>Get a grayscale image by appending ?grayscale to the end of the url.</h3>
+    <pre>https://picsum.photos/200/300?grayscale</pre>
+    </div>
+  <div style="flex-grow: 8"> <img src="images/img5.jpg" width="100%" alt="My Image"></div>
+</div>                                
+                
+    
+<div class="flex-container">
+  <div style="flex-grow: 8"> <img src="images/img6.jpg" width="100%" alt="My Image"></div>
+      <div style="flex-grow: 8" <div id="row6col2" style="line-height: 0.2em;">
+        <h2>Blur</h2>
+                <h3>Get a blurred image by appending ?blur to the end of the url.</h3>
+                <pre>https://picsum.photos/200/300/?blur</pre>
+                <h3>You can adjust the amount of blur by providing a number between 1 and 10.</h3>
+                <pre>https://picsum.photos/200/300/?blur=2</pre>
+  </div>
+</div>               
+                
+               
+<div class="flex-container">
+  <div style="flex-grow: 8" <div id="row7col1" style="line-height: 0.2em;">
+    
+    <h2>Advanced Usage</h2>
+                <h3>You may combine any of the options above.</h3>
+                <h3>For example, to get a specific image that is grayscale and blurred.</h3>
+                <pre>https://picsum.photos/id/870/200/300?grayscale&blur=2</pre>
+                <h3>To request multiple images of the same size in your browser, add the</h3>
+                <h3>random query param to prevent the images from being cached:</h3>
+                <pre> img src= "https://picsum.photos/200/300?random=1"
+                <br> img src="https://picsum.photos/200/300?random=2"></pre>
+                <h3>If you need a file ending, you can add .jpg to the end of the url.</h3>
+                <pre>https://picsum.photos/200/300.jpg</pre>
+                <h3>To get an image in the WebP format, you can add .webp to the end of the url.</h3>
+                <pre>https://picsum.photos/200/300.webp</pre>
+      </div>
+  <div style="flex-grow: 8"><img src="images/img7.jpg" width="100%" alt="My Image"></div>
+</div>                             
+        
+
+  <div class="flex-container">
+      <div style="flex-grow:8" > 
+          <h2> Details</h2>
+          <h3>Get information about a specific image by using the the <pr> /id/{id}/info</pr> 
+          <h3>endpoint</h3>
+          <pre>https://picsum.photos/id/0/info</pre>
+          <h3>You can find out the ID of an image by looking at the Picsum-ID</h3>
+          <h3> header, or the User Comment field in the EXIF metadata.<h3></div>
+      
+      <div style="flex-grow: 8" <div id="row6col2" style="line-height: 0.2em;  ">
+          
+          <h5>{<br>"id": "0",</h5>
+          <h5>"author": "Alejandro Escamilla",</h5>
+          <h5>"width": 5616,</h5>
+          <h5>"height": 3744,</h5>
+          <h5>"url": "https://unsplash.com/...",</h5>
+          <h5>"download_url": "https://picsum.photos/..."         
+          <br>} </h5>
+        </div>
+</div>
+
+<div id="footer" style="text-align: center; padding-top: 70px; height: 300px; background-color: black; color:white">
+  <img src="images/digitalocean.svg" width="15%" alt="My Image"><img src="images/cloudflare.svg" width="15%" alt="My Image">
+          <h5>Created by David Marby & Nijiko Yonskai</h5> 
+          <h5>Source</h5> 
+          <h5>Having trouble? Poke @DMarby on Twitter</h5>
+          <h5>Images from Unsplash</h5></div>
+
+         
+      
+        </div>                        
+      </body>
+</html>
